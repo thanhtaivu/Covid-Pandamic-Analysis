@@ -15,6 +15,8 @@ The goal is to:
 
 [vaccinations_global](https://catalog.ourworldindata.org/garden/covid/latest/vaccinations_global/vaccinations_global.csv)
 
+[Queries File](https://github.com/thanhtaivu/sql_covid_project/blob/main/covid19_cases_vaccinations_global_bigquerry.sql)
+
 ## Tables/Views Created nad Explaintions
 
 ## 1. COVID-19 Total Cases and Deaths as a Percentage of Population by Country
