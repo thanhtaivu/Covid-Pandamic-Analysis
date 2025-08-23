@@ -38,6 +38,9 @@ from sort_by_countries
 where latest_updated = 1 and continent is not null and population is not null 
 order by country
 ```
+- Result
+
+![Q1](https://github.com/thanhtaivu/sql_covid_project/blob/main/img/table_view_1.png)
 - This table/view shows the latest COVID-19 data for each country, including total cases, total deaths, and continent information. By selecting only the most recent records, it illustrate the current country of the pandemic worldwide. Countries with high totals indicate regions heavily affected, while lower numbers reflect less impact. This analysis provides a clear overview of global trends.
 
 ## 2. Global Total COVID-19 Cases and Deaths
@@ -75,6 +78,9 @@ select
     * 
 from total_cases_and_deaths;
 ```
+- Result
+
+![Q2](https://github.com/thanhtaivu/sql_covid_project/blob/main/img/table_view_2.png)
 - This query provides a global summary of the total COVID-19 cases and deaths. It begins by identifying the most recent data for each country to ensure that outdated information does not change the analysis. By filtering for the latest record per country, the query captures a snapshot of the pandemic as it current situarion worldwide.
 
 ## 3. COVID-19 Cases and Deaths by Continent with Global Percentage
@@ -113,6 +119,9 @@ select
 from sort_by_continent
 order by continent;
 ```
+- Result
+
+![Q3](https://github.com/thanhtaivu/sql_covid_project/blob/main/img/table_view_3.png)
 - This query analyzes COVID-19 cases and deaths at the continental level. It identifies the data for each country to ensure accuracy. Then, it aggregates these figures by continent, calculating total cases and deaths per region. To provide perspective on each continent’s contribution to the global pandemic, the query also computes the percentage of total cases and deaths relative to worldwide totals.
 
 ## 4. COVID-19 Vaccination Metrics Relative to Cases, Deaths, and Population by Country
@@ -156,6 +165,9 @@ left join lastest_vacination_only vac
     on vac.country = dc.country
 where dc.continent is not null
 ```
+- Result
+
+![Q4](https://github.com/thanhtaivu/sql_covid_project/blob/main/img/table_view_4.png)
 - This query examines COVID-19 vaccination progress at the country level in relation to cases, deaths, and population. It begins by selecting the most recent vaccination data and the latest COVID-19 case and death records for each country to ensure accuracy. By joining these datasets, the query calculates key vaccination percentages: the proportion of fully vaccinated individuals relative to total cases, total deaths, total population, and total vaccinations administered. This analysis provides insight into how effectively countries are progressing in immunizing their populations and highlights the relationship between vaccination efforts and the overall impact of the pandemic.
 
 ## 5. COVID-19 Vaccination Coverage and Metrics by Continent
@@ -217,6 +229,9 @@ from continent_totals
 where continent is not null
 order by continent
 ```
+- Result
+
+![Q5](https://github.com/thanhtaivu/sql_covid_project/blob/main/img/table_view_5.png)
 - This query analyzes COVID-19 vaccination progress at the continental level. It begins by selecting the latest vaccination and COVID-19 case and death data for each country. Country-level vaccination figures are then associated with their respective continents. Aggregating these data by continent provides total cases, total deaths, total population, fully vaccinated individuals, and total vaccinations per region. The query further calculates the proportion of fully vaccinated individuals relative to cases, population, and total vaccinations, offering insight into overall vaccination coverage across continents.
 
 ## Conlusion
