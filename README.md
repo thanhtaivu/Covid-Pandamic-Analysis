@@ -10,6 +10,11 @@ The goal is to:
 - Compare cases, deaths, and vacctionation progress rerlative to population
 - Create percentages and ratios to better understand the global distribution
 
+## Datasets
+[compact](https://catalog.ourworldindata.org/garden/covid/latest/compact/compact.csv)
+
+[vaccinations_global](https://catalog.ourworldindata.org/garden/covid/latest/vaccinations_global/vaccinations_global.csv)
+
 ## Tables/Views Created nad Explaintions
 
 ## 1. COVID-19 Total Cases and Deaths as a Percentage of Population by Country
