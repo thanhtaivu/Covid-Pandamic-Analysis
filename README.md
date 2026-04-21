@@ -1,4 +1,5 @@
 # COVID-19 Data Analysis with SQL
+[Azure%20SQL](https://img.shields.io/badge/Azure%20SQL-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white) ![BigQuery](https://img.shields.io/badge/BigQuery-4285F4?style=for-the-badge&logo=googlebigquery&logoColor=white)
 
 ## Overview
 This project focus on analyzing global COVID-19 data (cases, death, cacination and population impact) using both T-SQL and BigQuery queries
